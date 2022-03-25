@@ -219,7 +219,7 @@ noa.on('tick', function (dt) {
 // const ID =  fetch("https://random-word-api.herokuapp.com/word?number=2&swear=0").then(response => response.json());
 const user = "" + Math.random() + " " + Math.random();
 const realtime = new Ably.Realtime({
-    authUrl: process.env.AUTHENDPOINT,
+    authUrl: '/auth',
     clientId: user, /* This is who you will appear as in the presence set */
     plugins: {vcdiff: vcdiffDecoder },
     closeOnUnload: true // See https://support.ably.io/solution/articles/3000059875-why-don-t-presence-members-leave-as-soon-as-i-close-a-tab-

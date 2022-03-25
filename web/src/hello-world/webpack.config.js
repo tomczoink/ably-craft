@@ -1,8 +1,6 @@
 
 var path = require('path')
 var buildPath = path.resolve('..', '..', 'docs', 'hello-world')
-const Dotenv = require('dotenv-webpack');
-
 
 module.exports = (env) => ({
 
@@ -13,9 +11,6 @@ module.exports = (env) => ({
         path: buildPath,
         filename: 'bundle.js',
     },
-    plugins: [
-        new Dotenv()
-      ],
 
     resolve: {
         /* This resolve is necessary when importing noa-engine from the 

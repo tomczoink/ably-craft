@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "description": "Starter examples of game worlds using the noa voxel engine",
   "scripts": {
-    "start": "cd src/hello-world && webpack serve",
+    "start": "node web/server.js",
     "test": "cd src/test && webpack serve",
-    "build1": "rm -f docs/test/*.js*; cd src/test && webpack --env prod",
-    "build2": "rm -f docs/hello-world/*.js*; cd src/hello-world && webpack --env prod",
+    "build1": "rm -f web/docs/test/*.js*; cd web/src/test && webpack --env prod",
+    "build2": "rm -f web/docs/hello-world/*.js*; cd web/src/hello-world && webpack --env prod",
     "build": "npm run build1 && npm run build2"
   },
   "keywords": [
